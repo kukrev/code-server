@@ -40,3 +40,10 @@ npm config set python python2
 ```bash
 xcode-select --install
 ```
+
+## FreeBSD
+
+```sh
+pkg install -y git python npm-node12 yarn-node12 pkgconf
+pkg install -y libsecret libxkbfile libx11 libinotify
+```
