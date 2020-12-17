@@ -26,15 +26,6 @@ release_archive() {
   fi
 
   echo "done (release-packages/$release_name)"
-
-  release_gcp
-}
-
-release_gcp() {
-  mkdir -p "release-gcp/$VERSION"
-  cp "release-packages/$release_name.tar.gz" "./release-gcp/$VERSION/$OS-$ARCH.tar.gz"
-  mkdir -p "release-gcp/latest"
-  cp "./release-packages/$release_name.tar.gz" "./release-gcp/latest/$OS-$ARCH.tar.gz"
 }
 
 # Generates deb and rpm packages.
